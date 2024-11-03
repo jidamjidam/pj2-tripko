@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@ common.css @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@ (PJ2 _ TRIPKO) @@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+/*_*_*_*_*_* font-face(start)_*_*_*_*_*_*_*/
+
+@font-face {
+    font-family: 'NanumSquareNeo-Regular';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Bold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-ExtraBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf) format("truetype");
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/montserrat-v26-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../font/montserrat-v26-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/montserrat-v26-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../font/montserrat-v26-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../font/montserrat-v26-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../font/montserrat-v26-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+
+
+  @font-face {
+    font-family: 'Montserrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../font/montserrat-v26-latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../font/montserrat-v26-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/montserrat-v26-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../font/montserrat-v26-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../font/montserrat-v26-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../font/montserrat-v26-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+
+
+@font-face {
+
+    font-family: 'Archivo-Bold';
+    font-weight: 700;
+    src: url('../font/archivo-v19-latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../font/archivo-v19-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/archivo-v19-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../font/archivo-v19-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../font/archivo-v19-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../font/archivo-v19-latin-700.svg#Archivo') format('svg'); /* Legacy iOS */
+  }
+
+
+@font-face {
+    font-family: 'Frank Ruhl Libre-Medium';
+    font-weight: 500;
+    src: url('../font/frank-ruhl-libre-v21-latin-500.eot'); /* IE9 Compat Modes */
+    src: url('../font/frank-ruhl-libre-v21-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/frank-ruhl-libre-v21-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../font/frank-ruhl-libre-v21-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../font/frank-ruhl-libre-v21-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../font/frank-ruhl-libre-v21-latin-500.svg#FrankRuhlLibre') format('svg'); /* Legacy iOS */
+  }
+
+
+
+/*_*_*_*_*_* font-face(end)_*_*_*_*_*_*_*/
+
+
+
+/*_*_*_*_*_* in-common(srart)_*_*_*_*_*_*_*/
+
+
+
+	body { font-family: 'NanumSquareNeo-Regular'; }
+
+    section { overflow: hidden; position: relative; }
+
+    .inner_wrap { position: relative; width: 80vw; }
+
+    video::-webkit-media-controls { display:none !important; }
+
+    .rel { position: relative }
+
+
+
+
+/*_*_*_*_*_* in-common(end)_*_*_*_*_*_*_*/
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  common.css ++++++++++++++++++++++++++++
++++++++++++++++++++  (PJ2_TRIPKO)  ++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/*_*_*_*_*_* mobile(start)_*_*_*_*_*_*_*/
+
+@media screen and ( max-width: 767px ) {
+
+
+    header { overflow: hidden; position: fixed; left: 0; top: 0; z-index: 100; width: 100vw; height: 50px; }
+    h1 > a { position: absolute; left: 6.25vw; top: 0; bottom: 0; margin: auto; display: block; width: 21.875vw; background: url("../images/tripko_logo_w.png") no-repeat center; background-size: 100%; }
+    header > button { position: absolute; right: 6.25vw; bottom: 0; top: 0; margin: auto; display: block; width: 9.375vw; height: 9.375vw; background: url("../images/ico_menu.png") no-repeat center; background-size: 100%; }
+    section h2 { width: 100%; text-align: center; margin-bottom: 30px; font-size: 1.25em; font-family: 'NanumSquareNeo-Bold'; }
+
+
+    header.bg {  overflow: hidden; position: fixed; height: 50px; background: #fff; box-shadow: 0 10px 20px #eee; }
+    
+    header.bg > h1 > a { position: absolute; left: 6.25vw; top: 0; bottom: 0; margin: auto; display: block; width: 21.875vw; background: url("../images/tripko_logo.png") no-repeat center; background-size: 100%; }
+    header.bg > button { position: absolute; right: 6.25vw;  top: 0; bottom: 0; margin: auto; display: block; width: 9.375vw; background: url("../images/ico_menu_b.png") no-repeat center; background-size: 100%; }
+
+    header nav { overflow: hidden; position: fixed; left: 100vw; top: 0; bottom: 100vh; z-index: 105; width: 100vw; height: 100vh; transition: transform 0.2s; background: #0071BC; color: #fff; font-size: 1.25em;  }
+
+    header.on nav { overflow: hidden; transform: translateX(-100%); color: #fff; }
+    header.on nav button { position: relative; width: 100%; color: #fff; }
+
+
+    header.on nav > ul { position: absolute; top: 31.25vw; left: 6.25vw; }
+
+    header.on nav > button.close { position: absolute; right: 6.25vw; top: 3.125vw; display: block; width: 9.375vw; height: 9.375vw; background: url("../images/ico_nav_back.png") no-repeat center; background-size: 100%; }
+    header.on ul p.glo { font-size: 1.5em; font-family: 'NanumSquareNeo-Bold';  }
+    header.on nav > ul > li { margin-bottom: 30px; }
+    header.on nav > ul > li > ul { overflow: hidden; height: 0; }
+    nav > ul > li.active:nth-child(1) ul.sub { height: 100%; }
+	nav > ul > li.active:nth-child(2) ul.sub { height: 100%; }
+	nav > ul > li.active:nth-child(3) ul.sub { height: 100%; }
+    header.on nav > ul > li > ul > li { font-size: 1.125em; margin-bottom: 20px; }
+
+    header.on nav > ul > li > button::after {content:''; display:block; position: absolute; right: -30%; top:50%; transform: translate(-50%, -50%); width:16px; height: 12px; background:#fff; clip-path: polygon(50% 100%, 0 0, 100% 0); transition: transform 0.3s; }
+    header.on nav > ul > li.active > button { margin-bottom: 30px; }
+    header.on nav > ul > li.active button::after { transform: translate(-50%, -50%) rotate(180deg);  }
+    header.on nav > ul > li ul.sub { overflow: hidden; height: 0; transition: height 0.2s; }
+    header.on nav > ul > li.active:nth-child(1) ul.sub { height: 100%; }
+    header.on nav > ul > li.active:nth-child(2) ul.sub { height: 100%; }
+    header.on nav > ul > li.active:nth-child(3) ul.sub { height: 100%; }
+
+
+    footer { overflow: hidden; position: relative; width: 100vw; background: #0071BC; color: #fff; padding: 120px 6.25vw 0; height: 79.6875vw; }
+
+    footer > p.slogun { font-family: 'Archivo-Bold'; font-size: 1.375em; padding: 9.375vw 0 3.64583333vw; }
+
+    footer > div.footer_info { display: none; }
+    footer > div.footer_info_02 {display: none; }
+
+    footer > img { position: absolute; top: 0; right: 2vw; width: 60vw; height: 60vw; object-fit: 100%; opacity: 0.8; }
+
+    footer > p.copy { display: block; width: 100%; text-align: left; line-height: 1.5; font-size: 0.875em; }
+
+
+}
+
+
+
+/*_*_*_*_*_* mobile(end)_*_*_*_*_*_*_*/
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  common.css ++++++++++++++++++++++++++++
++++++++++++++++++++  (PJ2_TRIPKO)  ++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*_*_*_*_*_* tablet(start)_*_*_*_*_*_*_*/
+
+@media screen and ( min-width: 768px ) and ( max-width: 1024px ) {
+
+
+    .dir_btns[class ~= "_bg_K"] > span { background: #777; }
+    .dir_btns[class ~= "_bg_W"] > span { background: #fff; }
+
+	.dir_btns[class ~= "prev_01"] > span { clip-path: polygon(39% 0, 43% 0, 71% 50%, 43% 100%, 39% 100%, 67% 50%); transform: rotate(180deg); }
+	.dir_btns[class ~= "next_01"] > span { clip-path: polygon(39% 0, 43% 0, 71% 50%, 43% 100%, 39% 100%, 67% 50%); }
+
+	.dir_btns[class ~= "_S"] > span { width: 20px; height: 20px; }
+	.dir_btns[class ~= "_M"] > span { width: 40px; height: 40px; }
+	.dir_btns[class ~= "_L"] > span { width: 50px; height: 50px; }
+
+
+    header { overflow: hidden; position: fixed; left: 0; top: 0; z-index: 100; width: 100vw; height: 100px; }
+    h1 > a { position: absolute; left: 2.6041666vw; top: 0; bottom: 0; margin: auto; display: block; width: 9em; background: url("../images/tripko_logo_w.png") no-repeat center; background-size: 100%; }
+    header > button { position: absolute; right: 2.6041666vw; top: 0; bottom: 0; display: block; width: 3em; height: 3; background: url("../images/ico_menu.png") no-repeat center; background-size: 100%; }
+    section h2 { width: 80vw; display: inline-block; text-align: center; font-size: 1.875em; margin: 150px 0 70px; font-family: 'NanumSquareNeo-Bold'; }
+
+
+    header.bg {  overflow: hidden; position: fixed; height: 80px; background: #fff; box-shadow: 0 10px 20px #eee; }
+    
+    header.bg > h1 > a { position: absolute; left: 2.6041666vw; top: 0; bottom: 0; margin: auto; display: block; width: 9em; background: url("../images/tripko_logo.png") no-repeat center; background-size: 100%; }
+    header.bg > button { position: absolute; right: 2.6041666vw; top: 0; bottom: 0; margin: auto; display: block; width: 3em; height: 3em; background: url("../images/ico_menu_b.png") no-repeat center; background-size: 100%; }
+
+    header nav { overflow: hidden; position: fixed; left: 100vw; top: 0; bottom: 100vh; z-index: 105; width: 60vw; height: 100vh; transition: transform 0.2s; background: #0071BC; color: #fff; font-size: 1.125em;  }
+
+    header.on nav { overflow: hidden; transform: translateX(-100%); color: #fff; }
+    header.on nav button { position: relative; width: 100%; color: #fff; }
+    /* header.on nav::before { position: absolute; left: 0; top: 0; display: block; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.9); z-index: 101; } */
+
+    header.on nav > ul { position: absolute;  top: 50%; left: 50px;  transform: translateY(-50%); }
+
+    header.on nav > button.close { position: absolute; right: 2.6041666vw; top: 0; transform: translateY(50%); display: block; width: 3em; height: 3em; background: url("../images/ico_nav_back.png") no-repeat center; background-size: 100%; }
+    header.on ul p.glo { font-size: 1.875em; font-family: 'NanumSquareNeo-Bold';  }
+    header.on nav > ul > li { margin-bottom: 30px; }
+    header.on nav > ul > li > ul { overflow: hidden; height: 0; }
+    nav > ul > li.active:nth-child(1) ul.sub { height: 100%; }
+	nav > ul > li.active:nth-child(2) ul.sub { height: 100%; }
+	nav > ul > li.active:nth-child(3) ul.sub { height: 100%; }
+    header.on nav > ul > li > ul > li { font-size: 1.25em; margin-bottom: 20px; }
+
+    header.on nav > ul > li > button::after {content:''; display:block; position: absolute; right: -30%; top:50%; transform: translate(-50%, -50%); width:16px; height: 12px; background:#fff; clip-path: polygon(50% 100%, 0 0, 100% 0); transition: transform 0.3s; }
+    header.on nav > ul > li.active > button { margin-bottom: 30px; }
+    header.on nav > ul > li.active button::after { transform: translate(-50%, -50%) rotate(180deg);  }
+    header.on nav > ul > li ul.sub { overflow: hidden; height: 0; transition: height 0.2s; }
+    header.on nav > ul > li.active:nth-child(1) ul.sub { height: 100%; }
+    header.on nav > ul > li.active:nth-child(2) ul.sub { height: 100%; }
+    header.on nav > ul > li.active:nth-child(3) ul.sub { height: 100%; }
+
+
+
+
+
+    footer { overflow: hidden; position: relative; width: 100vw; background: #0071BC; color: #fff; padding: 0 3.6458333vw 50px;  }
+
+    footer > p.slogun { font-family: 'Archivo-Bold'; font-size: 2.5em; padding: 9.375vw 0 3.64583333vw; }
+
+    footer > div.footer_info { float: left; line-height: 1.5; width: 50%; }
+    footer > div.footer_info_02 { float: left; line-height: 1.5; }
+
+    footer > img { position: absolute; top: 0; right: 2vw; width: 40vw; height: 40vw; object-fit: 100%;  }
+
+    footer > p.copy { float: right; display: block; width: 50%; transform: translate(50% -100%); text-align: left; padding: 50px 0; line-height: 1.5; }
+	
+
+}
+
+
+/*_*_*_*_*_* tablet(end)_*_*_*_*_*_*_*/
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  common.css ++++++++++++++++++++++++++++
++++++++++++++++++++  (PJ2_TRIPKO)  ++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*_*_*_*_*_* desktop(start)_*_*_*_*_*_*_*/
+
+@media screen and ( min-width: 1025px ) {
+
+
+
+    .dir_btns[class ~= "_bg_K"] > span { background: #777; }
+    .dir_btns[class ~= "_bg_W"] > span { background: #fff; }
+
+	.dir_btns[class ~= "prev_01"] > span { clip-path: polygon(39% 0, 43% 0, 71% 50%, 43% 100%, 39% 100%, 67% 50%); transform: rotate(180deg); }
+	.dir_btns[class ~= "next_01"] > span { clip-path: polygon(39% 0, 43% 0, 71% 50%, 43% 100%, 39% 100%, 67% 50%); }
+
+	.dir_btns[class ~= "_S"] > span { width: 20px; height: 20px; }
+	.dir_btns[class ~= "_M"] > span { width: 40px; height: 40px; }
+	.dir_btns[class ~= "_L"] > span { width: 50px; height: 50px; }
+
+
+    /* moving motion */
+
+    .FI_grp { transition: transform 0.75s, opacity 0.75s; }
+
+    .FI_grp[class ~= "fi_0"] { transform: translate(0, 0); opacity: 0; }
+    .FI_grp[class ~= "fi_1"] { transform: translate(0, -50px); opacity: 0; }
+    .FI_grp[class ~= "fi_2"] { transform: translate(50px, 0); opacity: 0; }
+    .FI_grp[class ~= "fi_3"] { transform: translate(0, 50px); opacity: 0; }
+    .FI_grp[class ~= "fi_4"] { transform: translate(-50px, 0); opacity: 0; }
+ 
+    .FI_grp[class ~= "active"] { transform: translate(0, 0); opacity: 1; }
+
+
+    header { overflow: hidden; position: fixed; left: 0; top: 0; z-index: 100; width: 100vw; height: 100px; }
+    h1 > a { position: absolute; left: 2.6041666vw; top: 0; bottom: 0; margin: auto; display: block; width: 9em; background: url("../images/tripko_logo_w.png") no-repeat center; background-size: 100%; }
+    header > button { position: absolute; right: 2.6041666vw; top: 0; bottom: 0; display: block; width: 3em; height: 3; background: url("../images/ico_menu.png") no-repeat center; background-size: 100%; }
+    section h2 { width: 80vw; display: inline-block; text-align: center; font-size: 2.625em; margin: 150px 0 70px; font-family: 'NanumSquareNeo-Bold'; }
+
+
+    header.bg {  overflow: hidden; position: fixed; height: 80px; background: #fff; box-shadow: 0 10px 20px #eee; }
+    
+    header.bg > h1 > a { position: absolute; left: 2.6041666vw; top: 0; bottom: 0; margin: auto; display: block; width: 9em; background: url("../images/tripko_logo.png") no-repeat center; background-size: 100%; }
+    header.bg > button { position: absolute; right: 2.6041666vw; top: 0; bottom: 0; margin: auto; display: block; width: 3em; height: 3em; background: url("../images/ico_menu_b.png") no-repeat center; background-size: 100%; }
+
+    header nav { overflow: hidden; position: fixed; left: 100vw; top: 0; bottom: 100vh; z-index: 105; width: 25vw; height: 100vh; transition: transform 0.2s; background: #0071BC; color: #fff; font-size: 1.125em;  }
+
+    header.on nav { overflow: hidden; transform: translateX(-100%); color: #fff; }
+    header.on nav button { position: relative; width: 100%; color: #fff; }
+    /* header.on nav::before { position: absolute; left: 0; top: 0; display: block; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.9); z-index: 101; } */
+
+    header.on nav > ul { position: absolute;  top: 50%; left: 50px; width: 20vw; transform: translateY(-50%); }
+
+    header.on nav > button.close { position: absolute; right: 2.6041666vw; top: 0; transform: translateY(50%); display: block; width: 3em; height: 3em; background: url("../images/ico_nav_back.png") no-repeat center; background-size: 100%; }
+    header.on ul p.glo { font-size: 1.875em; font-family: 'NanumSquareNeo-Bold';  }
+    header.on nav > ul > li { margin-bottom: 30px; }
+    header.on nav > ul > li > ul.sub { overflow: hidden; height: 0; }
+    nav > ul > li.active ul.sub { height: auto; }
+	/* nav > ul > li.active:nth-child(2) ul.sub { height: 100%; }
+	nav > ul > li.active:nth-child(3) ul.sub { height: 100%; } */
+    header.on nav > ul > li > ul > li { font-size: 1.25em; margin-bottom: 20px; }
+    header.on nav .sub {
+        height: 0; /* 서브 메뉴 기본적으로 닫힌 상태 */
+        overflow: hidden;
+        transition: height 0.3s ease; /* 서브 메뉴 트랜지션 */
+      }
+
+    header.on nav > ul > li > button::after {content:''; display:block; position: absolute; right: 0; top:50%; transform: translate(-50%, -50%); width:1vw; height: 0.75vw; background:#fff; clip-path: polygon(50% 100%, 0 0, 100% 0); transition: transform 0.3s; }
+    header.on nav > ul > li.active > button { margin-bottom: 30px; }
+    header.on nav > ul > li.active button::after { transform: translate(-50%, -50%) rotate(180deg);  }
+    header.on nav > ul > li ul.sub { overflow: hidden; height: 0; transition: height 0.2s; }
+    header.on nav > ul > li.active:nth-child(1) ul.sub { height: 100%; }
+    header.on nav > ul > li.active:nth-child(2) ul.sub { height: 100%; }
+    header.on nav > ul > li.active:nth-child(3) ul.sub { height: 100%; }
+
+
+
+
+    footer { overflow: hidden; position: relative; width: 100vw; background: #0071BC; color: #fff; padding: 0 10vw;  }
+
+    footer > p.slogun { font-family: 'Archivo-Bold'; font-size: 5em; padding: 9.375vw 0 3.64583333vw; }
+
+    footer > div.footer_info { float: left; line-height: 1.5; }
+    footer > div.footer_info_02 { float: left; line-height: 1.5; }
+
+    footer > img { position: absolute; top: 0; right: 8vw; width: 33.75vw; height: 30.15625vw; object-fit: cover;  }
+
+    footer > p.copy { clear: both; display: block; width: 100%; text-align: right; padding-bottom: 3.64583333vw; }
+    
+
+
+
+}
+
+
+/*_*_*_*_*_* desktop(end)_*_*_*_*_*_*_*/
