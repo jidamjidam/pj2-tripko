@@ -301,11 +301,11 @@
 
     section.k_contents div.content_wrap { overflow-x: scroll; width: 100%; height: 100%; }
 
-    section.k_contents div.content_wrap ul { width: 500vw; }
+    section.k_contents div.content_wrap ul { width: 500vw; display: flex; }
     div.content_wrap ul li { position: relative; display: inline-block; width: 87.5vw; height: 87.5vw; border-radius: 20px; padding: 15.625vw 20px; margin-bottom: 15px;  }
     div.content_wrap ul li + li { margin-left: 3.6458333vw; }
-    div.content_wrap ul li a { position: relative; align-items: center; width: 100%; height: 100%; }
-    div.content_wrap ul li div.text_wrap { width: 100%; color: #fff; line-height: 1.5; justify-content: center; text-align: center;  }
+    div.content_wrap ul li a { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; }
+    div.content_wrap ul li div.text_wrap { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; color: #fff; line-height: 1.5; justify-content: center; text-align: center;  }
     div.content_wrap ul li div.text_wrap p.group { display: none; }
     div.content_wrap ul li div.text_wrap p.name { font-family: 'NanumSquareNeo-ExtraBold'; font-size: 1.25em; margin-bottom: 30px; }
     div.content_wrap ul li div.text_wrap p.sub { display: none; }
@@ -606,7 +606,7 @@
     section.best_tour div.tour_wrap img.img_left { float: left; display: inline-block; width: 49.4791666vw; height: 49.4791666vw; object-fit: cover; border-radius: 10px; }
     section.best_tour div.tour_wrap div.img_right { float: right; width: calc(100% - 49.4791666vw); height: 49.4791666vw; position: relative; border-radius: 10px;  }
     section.best_tour div.tour_wrap div.text_wrap { width: 100%; text-align: center; line-height: 1.5; padding: 0 30px; }
-    section.best_tour div.tour_wrap div.text_wrap p.name { font-family: 'NanumSquareNeo-ExtraBold'; font-size: 1.5em; color: #000; padding: 25px 0; }
+    section.best_tour div.tour_wrap div.text_wrap p.name { font-family: 'NanumSquareNeo-ExtraBold'; font-size: 1.5em; color: #000; padding: 20px 0; }
     section.best_tour div.tour_wrap div.text_wrap p { padding: 0 15.625vw; }
 
     /* best_tour common(end) */
@@ -714,11 +714,11 @@
     /* --------------------------------------- */
 
 
-    section.k_contents { overflow: hidden; width: 100vw; /*padding: 0 3.6458333vw;*/ margin-bottom: 80px; }
+    section.k_contents { overflow: hidden; width: 100vw; margin-bottom: 80px; }
     section.k_contents div.inner_wrap { width: 100%; position: relative; }
     section.k_contents h2 { width: 100%; text-align: center; margin: 80px 0;}
 
-    section.k_contents button.btn_more { position: absolute; top: 50%; right: 0; transform: translateY(-50%); display: inline-block; padding: 15px 40px; border: 1px solid #0071BC;  color: #0071BC; border-radius: 30px; }
+    section.k_contents button.btn_more { position: absolute; top: 50%; right: 3.6458333vw;; transform: translateY(-50%); display: inline-block; padding: 15px 40px; border: 1px solid #0071BC;  color: #0071BC; border-radius: 30px; }
 
     section.k_contents div.pagination { position: relative; width: 100%; height: 5px; background: #ddd; border-radius: 9999px; }
     section.k_contents div.pagination > span.active { position: absolute; top: 0; left: 40%; width: 20%; height: 5px; background: #0071BC; border-radius: 999999px; }
@@ -726,10 +726,10 @@
 
     div.content_wrap { overflow-x: scroll; width: 100%; }
 
-    section.k_contents div.content_wrap ul { width: 500vw; }
-    div.content_wrap ul li { position: relative; display: inline-block; width: 90vw; border-radius: 20px; padding: 15.625vw; margin: 0 2.6vw; }
+    section.k_contents div.content_wrap ul { width: 500vw; display: flex; }
+    div.content_wrap ul li { position: relative; display: inline-block; width: 90vw; border-radius: 20px; padding: 10vw; margin: 0 2.6vw; }
     div.content_wrap ul li a { display: flex; position: relative; align-items: center; height: 450px;  }
-    div.content_wrap ul li div.text_wrap { width: 70%; color: #fff; line-height: 1.5; justify-content: center; text-align: center; padding-right: 15.625vw; }
+    div.content_wrap ul li div.text_wrap { width: 70%; color: #fff; line-height: 1.5; justify-content: center; text-align: center; padding-right: 10vw; }
     div.content_wrap ul li div.text_wrap p.group { position: absolute; top: 0px; left: 0px; font-family: 'NanumSquareNeo-ExtraBold'; }
     div.content_wrap ul li div.text_wrap p.name { font-family: 'NanumSquareNeo-ExtraBold'; font-size: 2em; margin-bottom: 30px; }
     div.content_wrap ul li div.text_wrap p.sub { font-family: 'NanumSquareNeo-Bold';font-size: 1.5em; margin-bottom: 20px; }
@@ -805,7 +805,7 @@
     section.goods div.inner_wrap_02 { width: 100%; position: relative; margin: 0 auto; }
 
     section.goods div.view_mask { overflow: hidden; width: 92.7083334vw;  }
-    section.goods ul.main { width: 300%;  }
+    section.goods ul.main { width: 300%; display: flex; }
     section.goods ul.main > li { float: left; width: 46.2239vw; text-align: center; padding: 0 1.3020833vw; line-height: 1.5; }
 
     section.goods ul.main > li img { width: 100%; height: 46.2239vw; object-fit: cover; border-radius: 999999999999999999px; margin-bottom: 2.6041666vw; }
