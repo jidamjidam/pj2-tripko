@@ -592,6 +592,19 @@ window.addEventListener("load", function(){
 
             let Slide_Carousel_01 = Slide_Carousel(".goods", 4000, 4, 2, 1, "slide", false, false);
 
+            // m, t 자동재생
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const videos = document.querySelectorAll('.video_D, .video_T, .video_M');
+                
+                videos.forEach(video => {
+                    video.muted = true; // 음소거 설정
+                    video.play().catch(error => {
+                        console.log("자동 재생이 지원되지 않는 환경입니다.", error);
+                    });
+                });
+            });
+
             
         // k_contents
 
