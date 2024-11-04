@@ -96,6 +96,8 @@
 
     video::-webkit-media-controls { display:none !important; }
 
+    video { pointer-events: none; } 
+
     .rel { position: relative }
 
 
