@@ -457,7 +457,6 @@
     section.visual::after { content: ""; display: block; position: absolute; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.4); }
 
     section.visual video.video_D { display: none; }
-
     section.visual video.video_T { overflow: hidden; width: 100vw; height: 100vh; object-fit: cover; }
     section.visual img.video_M { display: none; }
 
@@ -906,9 +905,7 @@
     section.visual { overflow: hidden; width: 100vw; height: 100vh; }
     section.visual::after { content: ""; display: block; position: absolute; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.4); }
 
-    section.visual video.video_D { overflow: hidden; width: 100vw; height: 100vh; object-fit: cover; 
-    }
-
+    section.visual video.video_D { overflow: hidden; width: 100vw; height: 100vh; object-fit: cover; }
     section.visual video.video_T { display: none; }
     section.visual img.video_M { display: none; }
 
