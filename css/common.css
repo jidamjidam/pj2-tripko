@@ -215,7 +215,7 @@
 
     header { overflow: hidden; position: fixed; left: 0; top: 0; z-index: 100; width: 100vw; height: 100px; }
     h1 > a { position: absolute; left: 2.6041666vw; top: 0; bottom: 0; margin: auto; display: block; width: 9em; background: url("../images/tripko_logo_w.png") no-repeat center; background-size: 100%; }
-    header > button { position: absolute; right: 2.6041666vw; top: 0; bottom: 0; display: block; width: 3em; height: 3em; background: url("../images/ico_menu.png") no-repeat center; background-size: 100%; }
+    header > button { position: absolute; right: 2.6041666vw; top: 0; bottom: 0; margin: auto; display: block; width: 3em; height: 3em; background: url("../images/ico_menu.png") no-repeat center; background-size: 100%; }
     section h2 { width: 80vw; display: inline-block; text-align: center; font-size: 1.875em; margin: 150px 0 70px; font-family: 'NanumSquareNeo-Bold'; }
 
 
@@ -316,7 +316,7 @@
 
     header { overflow: hidden; position: fixed; left: 0; top: 0; z-index: 100; width: 100vw; height: 100px; }
     h1 > a { position: absolute; left: 2.6041666vw; top: 0; bottom: 0; margin: auto; display: block; width: 9em; background: url("../images/tripko_logo_w.png") no-repeat center; background-size: 100%; }
-    header > button { position: absolute; right: 2.6041666vw; top: 0; bottom: 0; display: block; width: 3em; height: 3em; background: url("../images/ico_menu.png") no-repeat center; background-size: 100%; }
+    header > button { position: absolute; right: 2.6041666vw; top: 0; bottom: 0; margin: auto; display: block; width: 3em; height: 3em; background: url("../images/ico_menu.png") no-repeat center; background-size: 100%; }
     section h2 { width: 80vw; display: inline-block; text-align: center; font-size: 2.625em; margin: 150px 0 70px; font-family: 'NanumSquareNeo-Bold'; }
 
 
